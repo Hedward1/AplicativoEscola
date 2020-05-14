@@ -1,0 +1,2 @@
+rootProject.name='01-Escola_PI'
+include ':app'
