@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".tela_escola.activity.TelaEscola"></activity>
-        <activity android:name=".tela_responsavel.TelaResponsavel" />
+        <activity android:name=".tela_responsavel.activity.TelaResponsavel" />
         <activity android:name=".main_activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

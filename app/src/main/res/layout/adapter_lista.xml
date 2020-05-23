@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
+            android:gravity="left"
             android:text="Responsavel"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -23,7 +24,8 @@
             android:id="@+id/txtTempoResponsavel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:gravity="center"
             android:text="Tempo"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -40,17 +42,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
+            android:gravity="left"
             android:text="Dependente"
-            android:textSize="16sp"
+            android:textSize="18dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtPeriodoDependente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:gravity="center"
             android:text="Período"
-            android:textSize="16sp"
+            android:textSize="18dp"
             android:textStyle="bold" />
     </LinearLayout>
 

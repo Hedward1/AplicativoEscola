@@ -29,7 +29,7 @@ public class TelaEscola extends AppCompatActivity {
         this.criarResponsaveis();
 
         //Configurar adapter
-        AdapterEscola adapterEscola = new AdapterEscola();
+        AdapterEscola adapterEscola = new AdapterEscola( listaResponsaveis );
 
         //Configurar Recyclerview
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
@@ -43,7 +43,14 @@ public class TelaEscola extends AppCompatActivity {
     /*Teoricamente isso aqui consulta a API dos pais*/
     public void criarResponsaveis (){
 
-        Responsavel responsavel = new Responsavel("Hedward","4","hedward junior","5ª A");
+        Responsavel responsavel = new Responsavel("Hedward","5","hedward junior","5ª A");
+        this.listaResponsaveis.add(responsavel);
+
+        responsavel = new Responsavel("marlon","10","marlon junior","8ª c");
+        this.listaResponsaveis.add(responsavel);
+
+        responsavel = new Responsavel(" lucas","Atraso","lucas junior","1ª A");
+        this.listaResponsaveis.add(responsavel);
 
     }
 

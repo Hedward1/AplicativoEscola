@@ -9,8 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.unicuritiba.a01_escola_pi.R;
+import com.unicuritiba.a01_escola_pi.tela_escola.model.Responsavel;
+
+import java.util.List;
 
 public class AdapterEscola extends RecyclerView.Adapter<AdapterEscola.MyViewHolder> {
+
+    private List<Responsavel> listaResponsavel;
+
+    public AdapterEscola(List<Responsavel> lista) {
+        this.listaResponsavel = lista;
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -24,17 +34,20 @@ public class AdapterEscola extends RecyclerView.Adapter<AdapterEscola.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.nomeResponsavel.setText("nome pai teste");
+        //Vai recuperar o primeiro responsavel.
+        Responsavel responsavel = listaResponsavel.get( position );
+
+        holder.nomeResponsavel.setText(responsavel.getNomeResponsavel());
         /*Verificar como vai funcionar essa parte com cronometro.*/
-        holder.tempoRestante.setText("4 min");
-        holder.nomeDependente.setText("nome filho teste");
-        holder.periodoDependente.setText("5 A");
+        holder.tempoRestante.setText(responsavel.getTempoRestante());
+        holder.nomeDependente.setText(responsavel.getNomeDependente());
+        holder.periodoDependente.setText(responsavel.getPeriodoDependente());
 
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return listaResponsavel.size();
     }
 
 
