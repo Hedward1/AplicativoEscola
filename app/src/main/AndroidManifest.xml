@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tela_escola.activity.TelaEscola"></activity>
+        <activity android:name=".TelaCadastro"></activity>
+        <activity android:name=".tela_escola.activity.TelaEscola" />
         <activity android:name=".tela_responsavel.activity.TelaResponsavel" />
         <activity android:name=".main_activity.MainActivity">
             <intent-filter>
