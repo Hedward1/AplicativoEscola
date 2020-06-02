@@ -1,8 +1,10 @@
-package com.unicuritiba.a01_escola_pi;
+package com.unicuritiba.a01_escola_pi.tela_cadastro.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.unicuritiba.a01_escola_pi.R;
 
 public class TelaCadastro extends AppCompatActivity {
 
