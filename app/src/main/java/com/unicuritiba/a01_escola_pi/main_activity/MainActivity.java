@@ -10,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.unicuritiba.a01_escola_pi.R;
 import com.unicuritiba.a01_escola_pi.tela_cadastro.activity.TelaCadastro;
-import com.unicuritiba.a01_escola_pi.tela_escola.activity.TelaEscola;
-import com.unicuritiba.a01_escola_pi.tela_responsavel.activity.TelaResponsavel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,16 +34,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Class classeResponsalvel = TelaCadastro.class;
 
+                /*
                 if (editCPF.getText().toString().isEmpty() && editSenha.getText().toString().isEmpty()) {
                     classeResponsalvel = TelaEscola.class;
                 } else if (editCPF.getText().toString() != null && editSenha.getText().toString() != null) {
                     classeResponsalvel = TelaCadastro.class;
                 } else if (editCPF.getText().toString().isEmpty() || editSenha.getText().toString().isEmpty()) {
                     classeResponsalvel = TelaResponsavel.class;
-                }
+                }*/
 
 
-                Intent intent = new Intent(getApplicationContext(), classeResponsalvel);
+                Intent intent = new Intent(getApplicationContext(), TelaCadastro.class);
                 //Passar dados
                 startActivity(intent);
             }
