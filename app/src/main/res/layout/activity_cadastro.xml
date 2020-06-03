@@ -19,6 +19,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
             android:orientation="vertical">
 
             <TextView
@@ -39,6 +40,7 @@
                     android:id="@+id/cadRadioResponsavel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:checked="true"
                     android:text="Responsável" />
 
                 <RadioButton
@@ -93,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Cadastro dependente"
+                    android:text="Cadastro Dependente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -286,16 +288,6 @@
                     android:layout_height="wrap_content"
                     android:hint="E-mail" />
             </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="8dp"
-                android:text="Tipo Cadastro"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

@@ -18,6 +18,9 @@ public class TelaCadastro extends AppCompatActivity {
     //radio group
     private RadioGroup tipoDoCadastro;
 
+    //campos de input text
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +33,7 @@ public class TelaCadastro extends AppCompatActivity {
         layoutFuncionario = findViewById(R.id.linearLayoutFuncionario);
 
         //iniciar sem visibisidade
-        layoutResponsavel.setVisibility(View.GONE);
+        layoutResponsavel.setVisibility(View.VISIBLE);
         layoutDependente.setVisibility(View.GONE);
         layoutFuncionario.setVisibility(View.GONE);
 
