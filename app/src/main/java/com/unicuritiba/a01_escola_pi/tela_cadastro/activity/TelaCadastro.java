@@ -26,7 +26,6 @@ public class TelaCadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
-
         //Linear Layout
         layoutResponsavel = findViewById(R.id.linearLayoutResponsavel);
         layoutDependente = findViewById(R.id.linearLayoutDependente);
@@ -41,7 +40,6 @@ public class TelaCadastro extends AppCompatActivity {
         tipoDoCadastro = findViewById(R.id.cadRadioGroup);
 
         radioButton();
-
     }
 
     private void radioButton() {
@@ -72,8 +70,6 @@ public class TelaCadastro extends AppCompatActivity {
                     //desabilita a view dos outros
                     layoutResponsavel.setVisibility(View.GONE);
                     layoutDependente.setVisibility(View.GONE);
-
-
                 }
             }
         });

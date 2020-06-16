@@ -1,4 +1,4 @@
-package com.unicuritiba.a01_escola_pi.main_activity;
+package com.unicuritiba.a01_escola_pi.main_activity.activity.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextInputEditText editCPF;
     private TextInputEditText editSenha;
     private Button btnLogin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,5 +50,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public TextInputEditText getEditCPF() {
+        return editCPF;
+    }
+
+    public void setEditCPF(TextInputEditText editCPF) {
+        this.editCPF = editCPF;
+    }
+
+    public TextInputEditText getEditSenha() {
+        return editSenha;
+    }
+
+    public void setEditSenha(TextInputEditText editSenha) {
+        this.editSenha = editSenha;
     }
 }

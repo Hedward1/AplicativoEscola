@@ -1,11 +1,11 @@
 package com.unicuritiba.a01_escola_pi.tela_responsavel.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.unicuritiba.a01_escola_pi.R;
 
@@ -38,9 +38,12 @@ public class TelaResponsavel extends AppCompatActivity {
         TextView resultadoTempo = findViewById(R.id.resultadoTempoTela);
         resultadoTempo.setText(""+tempoPrevisto);
 
+
     }
+
+
     public void avisarEscola(View view) {
-        Toast.makeText(getApplicationContext(), "Chegará em " + tempoPrevisto + "Minutos", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Chegará em " + tempoPrevisto + " minutos", Toast.LENGTH_LONG).show();
     }
 
 

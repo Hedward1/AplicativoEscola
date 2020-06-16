@@ -1,10 +1,10 @@
 package com.unicuritiba.a01_escola_pi.tela_escola.activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.unicuritiba.a01_escola_pi.R;
 import com.unicuritiba.a01_escola_pi.tela_escola.adapter.AdapterEscola;
@@ -46,10 +46,10 @@ public class TelaEscola extends AppCompatActivity {
         Responsavel responsavel = new Responsavel("Hedward","5","hedward junior","5ª A");
         this.listaResponsaveis.add(responsavel);
 
-        responsavel = new Responsavel("marlon","10","marlon junior","8ª c");
+        responsavel = new Responsavel("marlon", "10", "marlon junior", "5ª A");
         this.listaResponsaveis.add(responsavel);
 
-        responsavel = new Responsavel(" lucas","Atraso","lucas junior","1ª A");
+        responsavel = new Responsavel(" lucas", "Atraso", "lucas junior", "5ª A");
         this.listaResponsaveis.add(responsavel);
 
     }

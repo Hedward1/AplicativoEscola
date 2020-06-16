@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
     android:padding="16dp"
     tools:context=".tela_responsavel.activity.TelaResponsavel">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:text="Tempo previsto para chegada na escola:"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Tempo previsto para chegada na escola em minutos:"
         android:textColor="#4CAF50"
-        android:textSize="36dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagemLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <ImageView
         android:id="@+id/imagemLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="353dp"
+        android:layout_height="241dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,52 +35,82 @@
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:clickable="true"
         android:onClick="diminuirTempo"
         android:src="@drawable/remove_32dp"
         android:tint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="#FFFFFF" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/txtAvisarEscola"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="false"
-        android:clickable="true"
-        android:onClick="avisarEscola"
-        android:src="@drawable/ic_check_circle_24dp"
-        android:tint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/txtAvisarEscola"
+        app:layout_constraintStart_toStartOf="@+id/txtAvisarEscola"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.509" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_height="56dp"
         android:clickable="true"
         android:onClick="subirTempo"
         android:src="@drawable/ic_add_circle_32dp"
         android:tint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/txtAvisarEscola"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/txtAvisarEscola"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/resultadoTempoTela"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="0"
         android:textColor="@color/colorPrimary"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtAvisarEscola"
         app:layout_constraintEnd_toStartOf="@+id/floatingActionButton4"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/txtAvisarEscola"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="avisarEscola"
+        android:text="Confirmar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Horário do término das aulas"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemLogo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="107dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="12:00"
+        android:textColor="@color/vermelhoClaro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
