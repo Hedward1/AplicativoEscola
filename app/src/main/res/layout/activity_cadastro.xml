@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="12dp"
-    tools:context=".tela_cadastro.activity.TelaCadastro">
+    tools:context=".tela_cadastro.activity.activity.TelaCadastro">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -98,6 +98,16 @@
                     android:text="Cadastro Dependente"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Código Responsável" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"

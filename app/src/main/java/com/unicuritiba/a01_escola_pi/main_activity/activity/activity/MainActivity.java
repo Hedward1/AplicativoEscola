@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.unicuritiba.a01_escola_pi.R;
-import com.unicuritiba.a01_escola_pi.tela_cadastro.activity.TelaCadastro;
+import com.unicuritiba.a01_escola_pi.main_activity.activity.model.Login;
+import com.unicuritiba.a01_escola_pi.tela_cadastro.activity.activity.TelaCadastro;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                new Login(editCPF.getText().toString(), editSenha.getText().toString());
 
                 Class classeResponsalvel = TelaCadastro.class;
 

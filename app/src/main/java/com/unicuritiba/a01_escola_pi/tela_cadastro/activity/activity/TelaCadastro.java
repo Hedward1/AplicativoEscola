@@ -1,4 +1,4 @@
-package com.unicuritiba.a01_escola_pi.tela_cadastro.activity;
+package com.unicuritiba.a01_escola_pi.tela_cadastro.activity.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +14,7 @@ public class TelaCadastro extends AppCompatActivity {
     View layoutResponsavel;
     View layoutDependente;
     View layoutFuncionario;
+
 
     //radio group
     private RadioGroup tipoDoCadastro;
@@ -71,6 +72,8 @@ public class TelaCadastro extends AppCompatActivity {
                     layoutResponsavel.setVisibility(View.GONE);
                     layoutDependente.setVisibility(View.GONE);
                 }
+
+
             }
         });
     }
